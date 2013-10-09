@@ -98,7 +98,7 @@ struct API_EXPORT BamAlignment {
     // additional methods
     public:
         // populates alignment string fields
-        bool BuildCharData(void);
+        virtual bool BuildCharData(void);
 
         // calculates alignment end position
         int GetEndPosition(bool usePadded = false, bool closedInterval = false) const;
